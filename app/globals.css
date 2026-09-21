@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  --font-sans: var(--font-vazirmatn), 'Vazirmatn', system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-vazirmatn), 'Vazirmatn', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    --font-vazir: var(--font-vazirmatn), 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  *, ::before, ::after {
+    font-family: var(--font-vazir);
+  }
+
+  html {
+    font-family: var(--font-vazir);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-vazir);
+    background-color: #FCFBF7;
+    color: #1A1A1A;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea, select {
+    font-family: var(--font-vazir) !important;
+  }
+}
+
+/* Luxury Golden Glow and Custom Persian Numeric Styles */
+.persian-nums {
+  font-feature-settings: "ss01" on, "cv01" on;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5D77F 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.crimson-gradient-bg {
+  background: linear-gradient(145deg, #4A0512 0%, #6B081D 50%, #30020A 100%);
+}
+
+.gold-border-subtle {
+  border-color: rgba(212, 175, 55, 0.28);
+}
+
